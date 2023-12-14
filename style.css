@@ -5,3 +5,69 @@
     Developed by: Rahat Ali
     Contact: r.ali@se22.qmul.ac.uk
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global */
+body {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    margin: 0% 0% 0% 0%;
+}
+
+/* Titlepage */
+#titlepage {
+    /* background-color: #f5f5f5; */
+    background-color: #0d3273;
+    color: white;
+    padding: 1% 0% 1% 0%;
+
+}
+
+#titlepage {
+    text-align: center;
+}
+
+#titlepage h1 {
+    font-size: 250%;
+    margin: 1% 0% 1% 0%;
+}
+
+
+/* container */
+
+.container {
+    padding: 1% 20% 0% 20%;
+}
+
+/* Tile */
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1% 0% 5% 0%;
+}
+
+.tile {
+    padding: 1% 2% 1% 2%;
+    display: inline-block;
+    background-color: #b9c6ff;
+    transition: transform 0.3s ease-in-out;
+    border-color: black;
+    border-style: solid;
+}
+
+.tile:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.tile img {
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+#sfe, #sfw {
+    padding: 1% 6.5% 0% 6.5%;
+}
