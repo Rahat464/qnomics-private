@@ -47,7 +47,7 @@ body {
 }
 
 .tile {
-    width: 37%;
+    width: 35%;
     height: 20%;
     padding: 1% 1% 1% 1%;
     margin: 1% 0% 2% 0%;
@@ -72,13 +72,10 @@ body {
     margin: auto;
 }
 
-#sfe, #sfw {
-    /* padding: 0% 8% 0% 6.5%; */
-}
-
 /* About */
 #about {
     padding: 1% 0% 1% 0%;
+    font-size: 120%;
 }
 
 /* Footer */
