@@ -3,7 +3,6 @@
     qNomics Financial Literacy Project
     Date: 14/12/2023
     Developed by: Rahat Ali
-    Contact: r.ali@se22.qmul.ac.uk
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -26,7 +25,7 @@ body {
 
 /* container */
 .container {
-    padding: 1% 20% 0% 20%;
+    padding: 0% 20% 0% 20%;
 }
 
 /* Tile */
@@ -37,9 +36,9 @@ body {
 }
 
 .tile {
-    width: 35%;
+    width: 39%;
     height: 20%;
-    padding: 1% 1% 1% 1%;
+    padding: 01% 1% 1% 1%;
     margin: 1% 0% 2% 0%;
     display: inline-block;
     background-color: #b9c6ff;
@@ -48,6 +47,11 @@ body {
     border-style: solid;
     text-align: center;
     border-radius: 10%;
+}
+
+.tile a {
+    text-decoration: none;
+    color: black;
 }
 
 .tile:hover {
