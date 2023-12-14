@@ -19,21 +19,12 @@ body {
 #titlepage {
     background-color: #0d3273;
     color: white;
-    padding: 1% 0% 1% 0%;
-}
-
-#titlepage {
+    padding: 0.05% 0% 0.05% 0%;
     text-align: center;
-}
-
-#titlepage h1 {
-    font-size: 250%;
-    margin: 1% 0% 1% 0%;
 }
 
 
 /* container */
-
 .container {
     padding: 1% 20% 0% 20%;
 }
@@ -43,7 +34,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* margin: 1% 0% 5% 0%; */
 }
 
 .tile {
@@ -80,7 +70,6 @@ body {
 
 /* Footer */
 footer {
-    /* margin: 1% 0% 0% 0%; */
     background-color: #0d3273;
     color: white;
     text-align: center;
