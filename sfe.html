@@ -4,21 +4,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SFE</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sfe.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
+    <header id="titlepage">
+        <h1>Student Finance England</h1>
+    </header>
     <!-- back button -->
-    <div class="back">
-        <a href="../index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M0 0h24v24H0z" fill="none"/>
-                <path d="M14 7l-5 5 5 5V7z"/>
-            </svg>
-            Home Page
-        </a>
+    <div id="back">
+        <a href="index.html" id="bac">&larr; Home Page</a>
     </div>
-    <div class="container">
-        
-    </div>
+    <!-- Article -->
+    <article class="container">
+        <!-- 1. Understanding the application process -->
+        <section>
+            <header>
+                <h1>Understanding the application process</h1>
+            </header>
+            <p>You can apply for two types of student loans:</p>
+            <ul>
+                <li>Tuition Fee Loan</li>
+                <li>Maintenance Loan</li>
+            </ul>
+            <p>You can apply for both loans at the same time and both have to be paid back.</p>
+            <h2>Tuition Fee Loan</h2>
+            <p>The Tuition Fee Loan is paid directly to your university or college.
+                The amount you can borrow depends on the tuition fees charged by your university or college.
+            </p>
+            <h4>Eligibility</h4>
+            <p>You can apply for a tuition fee loan if you are studying one of the following courses:</p>
+            <ul>
+                <li>Foundation Degree</li>
+                <li>Undergraduate</li>
+                <li>Integrated Master's</li>
+                <li>Postgraduate</li>
+                <li>Initial Teacher Training</li>
+                <li>Certificate of Higher Education</li>
+                <li>Diploma of Higher Education (DipHE)</li>
+                <li>Higher National Certificate (HNC)</li>
+                <li>Higher National Diploma (HND)</li>
+            </ul>
+            <h2>Maintenance Loan</h2>
+            <p>
+                The Maintenance Loan is paid directly to you. 
+                It covers your living costs, such as accommodation, food, and travel. 
+            </p>
+            <h4>Eligibility</h4>
+            <p>
+                The amount you can borrow depends on your household income, where you live and where you study.
+                If you do not provide details of your household income, you will only be eligible for the minimum amount of Maintenance Loan.
+                Below are the different amounts of Maintenance Loan you can borrow if you study and live in London depending on your household income.
+                Please note that the amounts are different if you live at home (e.g. with parents), even if you study and live in London.
+            </p>
+            <!-- Table of Maintenance Loans -->
+            <table id="maintenance-loan-sfe">
+                <caption>Students living away from home (London)</caption>
+                <tr id="maintenance-loan-sfe-column">
+                    <th>Household Income</th>
+                    <th>Away from Home (London)</th>
+                </tr>
+                <tr>
+                    <td> &lt;25,000</td>
+                    <td>£13,022</td>
+                </tr>
+                <tr>
+                    <td>£30,000</td>
+                    <td>£12,297</td>
+                </tr>
+                <tr>
+                    <td>£35,000</td>
+                    <td>£11,571</td>
+                </tr>
+                <tr>
+                    <td>£40,000</td>
+                    <td>£10,845</td>
+                </tr>
+                <tr>
+                    <td>£45,000</td>
+                    <td>£10,120</td>
+                </tr>
+                <tr>
+                    <td>£50,000</td>
+                    <td>£9,394</td>
+                </tr>
+                <tr>
+                    <td>£55,000</td>
+                    <td>£8,668</td>
+                </tr>
+                <tr>
+                    <td>£58,291</td>
+                    <td>£8,191</td>
+                </tr>
+                <tr>
+                    <td>£60,000</td>
+                    <td>£7,943</td>
+                </tr>
+                <tr>
+                    <td>£65,000</td>
+                    <td>£7,217</td>
+                </tr>
+                <tr>
+                    <td>£70,000</td>
+                    <td>£6,491</td>
+                </tr>
+                <tr>
+                    <td>&gt;£70,040</td>
+                    <td>£6,485</td>
+                </tr>
+            </table>
+        </section>
+        <!-- 2. Understanding the loan system -->
+        <section>
+            <hr>
+            <header>
+                <h1>Understanding the loan system</h1>
+            </header>
+            <h2>Student Loan Plans</h2>
+            <p>
+                There are two types of Student Loan Plans: Plan 1 and Plan 2.
+                The type of loan you have depends on when you started your course.
+            </p>
+            <h3>Plan 1</h3>
+            <ul>
+                <li><strong>Older System:</strong> Type 1 loans are associated with the "Plan 1" repayment system. If you started your course before September 1, 2012, in England and Wales, or before September 1, 2013, in Northern Ireland or Scotland, you likely have a Type 1 loan.</li>
+                <li><strong>Interest Rates:</strong> The interest rates on Type 1 loans are typically lower than those on Type 2 loans. The interest rate is linked to inflation (measured by the Retail Prices Index, RPI) and can vary based on income.</li>
+                <li><strong>Repayment Threshold:</strong> The income threshold for starting repayments on Type 1 loans is higher compared to Type 2 loans. Repayments begin once the graduate's income exceeds a certain threshold.</li>
+                <li><strong>Repayment Amount:</strong> Graduates repay a percentage of their income above the repayment threshold. The percentage increases with income.</li>
+            </ul>
+            <h3>Plan 2</h3>
+            <ul>
+                <li><strong>Newer System:</strong> Type 2 loans are associated with the "Plan 2" repayment system. If you started your course on or after September 1, 2012, in England and Wales, or on or after September 1, 2013, in Northern Ireland or Scotland, you likely have a Type 2 loan.</li>
+                <li><strong>Interest Rates:</strong> The interest rates on Type 2 loans are higher than those on Type 1 loans. The interest rate is based on the individual's income, rising with higher income levels.</li>
+                <li><strong>Repayment Threshold:</strong> The income threshold for starting repayments on Type 2 loans is lower compared to Type 1 loans. Repayments begin once the graduate's income exceeds a certain threshold.</li>
+                <li><strong>Repayment Amount:</strong> Like Type 1 loans, graduates repay a percentage of their income above the repayment threshold. The percentage increases with income.</li>
+                <p>You’ll be on a Plan 2 Loan if: </p>
+                <li>you started your course between 1st September 2012 and 31st July 2023</li>
+                <li>You're studying an undergraduate course</li>
+                <li>You’re studying a Postgraduate Certificate of Education (PGCE)</li>
+                <li>You take out an advanced learner loan</li>
+                <li>You take out a Higher Education Short Course Loan</li>
+            </ul>
+            <h3>Plan 5</h3>
+            <p>You’ll be on a Plan 5 Loan if: </p>
+            <ul>
+                <li>You started your course on or after 1st August 2023</li>
+                <li>You're studying an undergraduate course</li>
+                <li>You’re studying a Postgraduate Certificate of Education (PGCE)</li>
+                <li>You take out an advanced learner loan</li>
+            </ul>
+            <h2>Other loan types</h2>
+            <p>If you took out a loan for a different course, there may be different terms.</p>
+            <h3>Master's Loan</h3>
+            <ul>
+                <li><strong>Eligibility:</strong> Master's loans are typically available to UK nationals, EU nationals, and certain other categories of students. The eligibility criteria may vary, so it's essential to check with the relevant funding body.</li>
+                <li><strong>Amount:</strong> The maximum amount that can be borrowed under a Master's Loan is usually a fixed sum per academic year. The actual amount may depend on factors like the cost of the course and whether it's a full-time or part-time program.</li>
+                <li><strong>Repayment:</strong> Repayment of Master's Loans generally starts in April after the student completes their course. The repayment terms are income-contingent, meaning that repayments are based on the individual's income. The repayment threshold is typically higher compared to undergraduate loans.</li>
+                <li><strong>Interest Rates:</strong> The interest rates on Master's Loans are linked to inflation (usually the Retail Prices Index, RPI) plus a certain percentage, depending on the individual's income.</li>
+            </ul>
+            <h3>Doctoral Loan</h3>
+            <ul>
+                <li><strong>Eligibility:</strong> Doctoral loans are available for those undertaking a doctoral-level qualification (such as a PhD) in the UK. Eligibility criteria may include factors like residency and age.</li>
+                <li><strong>Amount:</strong> The maximum amount available through a Doctoral Loan is usually higher than that for Master's Loans. The actual amount may depend on factors like the length of the program.</li>
+                <li><strong>Repayment:</strong> Like Master's Loans, repayments for Doctoral Loans are income-contingent and begin in April after the student completes their course. The repayment threshold is typically higher compared to Master's Loans.</li>
+                <li><strong>Interest Rates:</strong> The interest rates on Doctoral Loans are also linked to inflation (usually RPI) plus a certain percentage, based on the individual's income.</li>
+            </ul>
+        </section>
+        <!-- 3. Understanding the repayment system -->
+        <section>
+            <hr>
+            <header>
+                <h1>Understanding the repayment system</h1>
+            </header>
+            <p>
+                The Tuition Fee Loan and Maintenance Loan are paid back together. 
+                You will start paying back your loan in the April after you graduate or leave your course.
+                The amount you pay back each month depends on how much you earn and the plan you’re on.
+            </p>
+            <h2>Plan 2</h2>
+            <p>You are required to pay back a portion of your income if you earn <strong>£27,296</strong> or more yearly.</p>
+            <!-- TODO: make a table comparing repayment plans -->
+        </section>
+    </article>
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <!-- Disclaimer -->
+        <p id="disclaimer">Disclaimer:
+            This website is not affiliated with any of the funding bodies mentioned above. 
+            There may be inaccuracies in the information provided.
+            Please refer to the official websites for the most up-to-date information, 
+            and contact the funding bodies directly if you have any questions.
+        </p>
+        <hr>
+        <p>qNomics Financial Literacy Project</p>
+    </footer>
 </body>
 </html>
