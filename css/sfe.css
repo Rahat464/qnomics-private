@@ -22,32 +22,49 @@
     cursor: pointer;
 }
 
-#maintenance-loan-sfe {
-    border: 1px solid black;
-    margin: 0 auto;
-    background-color: white;
+/* Article */
+section header h1 {
+    font-size: 175%;
 }
 
-#maintenance-loan-sfe td {
+/* table */
+#maintenance-loan-sfe, #sfe-repayment-table {
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+#maintenance-loan-sfe tr, td, th {
     text-align: center;
-    padding: 1% 5% 1% 5%;
+    padding: 1% 1% 1% 1%;
 }
 
-#maintenance-loan-sfe-column {
-    padding: 1% 5% 1% 5%;
-    border: 1px solid black;
-    margin: 0 auto;
-    background-color: white;
+#maintenance-loan-sfe tr:nth-child(even) {
+    background-color: rgb(224, 224, 224);
+}
+
+#maintenance-loan-sfe tr:nth-child(odd) {
+    background-color: rgb(211, 211, 211);
 }
 
 #maintenance-loan-sfe tr:nth-child(1) {
     background-color: lightblue;
 }
 
-#maintenance-loan-sfe tr:nth-child(even) {
-    background-color: lightgray;
+/* SFE Repayment Table */
+
+#sfe-repayment-table tr:nth-child(even) {
+    background-color: rgb(224, 224, 224);
+}   
+
+#sfe-repayment-table tr:nth-child(odd) {
+    background-color: rgb(211, 211, 211);
 }
 
-section header h1 {
-    font-size: 175%;
+#sfe-repayment-table tr:nth-child(1) {
+    background-color: lightblue;
 }
+
+#sfe-repayment-table tr td:nth-child(4) {
+    text-align: left;
+}
+

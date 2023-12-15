@@ -60,8 +60,8 @@
             </p>
             <!-- Table of Maintenance Loans -->
             <table id="maintenance-loan-sfe">
-                <caption>Students living away from home (London)</caption>
-                <tr id="maintenance-loan-sfe-column">
+                <caption>Table 1: Students living away from home (London)</caption>
+                <tr id="column">
                     <th>Household Income</th>
                     <th>Away from Home (London)</th>
                 </tr>
@@ -182,9 +182,94 @@
                 You will start paying back your loan in the April after you graduate or leave your course.
                 The amount you pay back each month depends on how much you earn and the plan you’re on.
             </p>
-            <h2>Plan 2</h2>
-            <p>You are required to pay back a portion of your income if you earn <strong>£27,296</strong> or more yearly.</p>
-            <!-- TODO: make a table comparing repayment plans -->
+            <table id="sfe-repayment-table">
+                <caption>Table 2: Comparing repayment plans</caption>
+                <tr>
+                    <th>Question</th>
+                    <th>Plan 2</th>
+                    <th>Plan 5</th>
+                    <th>Additional Notes</th>
+                </tr>
+                <!-- Income Threshold -->
+                <tr>
+                    <td>How much do I have to earn before I start repaying?</td>
+                    <td><strong>£27,296</strong> or more yearly</td>
+                    <td><strong>£25,000</strong> or more yearly</td>
+                    <td>This income includes things like bonuses and overtime and is before tax and other deductions.</td>
+                </tr>
+                <!-- When you start repaying -->
+                <tr>
+                    <td>When do I start repaying</td>
+                    <td>April</td>
+                    <td>April</td>
+                    <td>That is, the April <strong>after</strong> you graduate or leave your course.</td>
+                </tr>
+                <!-- When your loan is written off -->
+                <tr>
+                    <td>When is my loan is written off?</td>
+                    <td>30 years</td>
+                    <td>40 years</td>
+                    <td>The timer starts from the time you are required to repay</td>
+                </tr>
+                <!-- How is interest calculated? -->
+                <tr>
+                    <td>How is interest calculated?</td>
+                    <td>RPI + 3%</td>
+                    <td>RPI</td>
+                    <td>
+                        <ul>
+                            <li>RPI = Retail Price Index</li>
+                            <li>Interest is added to your balance each month starting from the day you first received your loan.</li>
+                            <li>In exceptional circumstances, the interest rate may be capped by the government.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <!-- How much you repay -->
+                <tr>
+                    <td>How much do I repay?</td>
+                    <td>9% of your income over the threshold</td>
+                    <td>9% of your income over the threshold</td>
+                    <td>That is, 9% of your income over £27,296 or £25,000</td>
+                </tr>
+                <!-- Example -->
+                <tr id="sfe-example">
+                    <td>Example</td>
+                    <td>
+                        <ul>
+                            <li>I earn £27,000 and graduated in June 2025.</li>
+                            <li>I will begin repaying in April 2026.</li>
+                            <li>My loan will be written off in April 2056.</li>
+                            <li>I will pay not towards my student debt.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>I will earn £27,000 and graduated in June 2026.</li>
+                            <li>I will begin repaying in April 2067.</li>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>The interest will continue accumulating until your loan is written off or paid off completely.</li>
+                            <li>
+                                <strong>Plan 2:</strong>
+                                Since you are earning less than the income threshold,
+                                you will not be paying anything towards your student loans.
+                            </li>
+                            <li>
+                                <strong>Plan 5:</strong>
+                                Since you are earning more than the income threshold, you will be paying 9% income over the threshold.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <ul>
+                <li>This means that you’ll begin paying back a Plan 5 Student Loan earlier since the threshold to begin paying back your loan is lower.</li>
+                <li>You’ll be paying off a Plan 5 Student Loan longer, since it is written off 10 years later than a Plan 2 loan.</li>
+            </ul>
         </section>
     </article>
     <!-- Footer -->
