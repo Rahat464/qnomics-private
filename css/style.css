@@ -11,7 +11,6 @@
 body {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     margin: 0% 0% 0% 0%;
-    /* background-color: #fcfad5; */
 }
 
 /* Titlepage */
@@ -95,4 +94,31 @@ footer {
 #disclaimer {
     font-size: 80%;
     color: #bbbbbb;
+}
+
+/* tablet */
+
+@media only screen and (max-width: 1242px) {
+    .tile img {
+        height: auto;
+        width: 70%;
+    }
+
+    .container {
+        padding: 0% 2% 0% 2%;
+    }
+}
+
+
+/* mobile */
+
+@media only screen and (max-width: 720px) {
+    .tile {
+        width: 100%;
+        height: 20%;
+    }
+
+    #about {
+        font-size: 100%;
+    }
 }

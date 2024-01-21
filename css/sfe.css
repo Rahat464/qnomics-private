@@ -3,16 +3,15 @@
 /* back button*/
 
 #back {
-    position: absolute;
-    padding: 1% 1% 1% 1%;
-    width: 10%;
-    z-index: 1;
+    /* position: absolute; */
+    padding: 1% 1% 0% 1%;
+    width: 100%;
 }
 
 #back a {
     color: black;
     background-color: rgb(168, 168, 168);
-    padding: 3% 3% 3% 3%;
+    padding: 0.5% 0.5% 0.5% 0.5%;
     border-radius: 5%;
     text-decoration: none;
     font-size: 150%;
@@ -68,3 +67,17 @@ section header h1 {
     text-align: left;
 }
 
+/* tablet */
+@media only screen and (max-width: 1242px) {
+    table {
+        width: 100%;
+    }
+
+    .large-table-wrapper {
+        overflow-x:auto;
+    }
+
+    .large-table-wrapper table {
+        width: 200%;
+    }
+}
