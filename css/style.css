@@ -95,33 +95,6 @@ footer {
     color: #bbbbbb;
 }
 
-/* tablet */
-
-@media only screen and (max-width: 1242px) {
-    .icon {
-        height: auto;
-        width: 70%;
-    }
-
-    .container {
-        padding: 0% 2% 0% 2%;
-    }
-}
-
-
-/* mobile */
-
-@media only screen and (max-width: 720px) {
-    .tile {
-        width: 100%;
-        height: 20%;
-    }
-
-    #about {
-        font-size: 100%;
-    }
-}
-
 /* Chart.js */
 #chartContainer {
     height: 420px;
@@ -182,4 +155,41 @@ footer {
     width: 90%;
     padding: 10px;
     margin-bottom: 10px;
+}
+
+/* tablet */
+
+@media only screen and (max-width: 1242px) {
+    .icon {
+        height: auto;
+        width: 70%;
+    }
+
+    .container {
+        padding: 0% 2% 0% 2%;
+    }
+
+    #inputbox {
+        width: 95%;
+    }
+
+    #inputbox input, #inputbox select {
+        width: 80%;
+    }
+}
+
+
+/* mobile */
+
+@media only screen and (max-width: 720px) {
+    .tile {
+        width: 100%;
+        height: 20%;
+    }
+
+    #about {
+        font-size: 100%;
+    }
+
+
 }
