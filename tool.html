@@ -18,25 +18,30 @@
         <a href="index.html">&larr; Home Page</a>
     </div>
     <div class="container">
+        <br>
         <div id="chartContainer"></div>
         <div id="inputbox">
             <form>
                 <input id="debt" type="number" placeholder="Debt (£)">
-                <input id="interest" type="number" placeholder="Interest Rate (%)">
+                <input id="income" type="number" placeholder="Income (£)">
+                <input id="incomeIncrease" type="number" placeholder="Yearly Income Increase (%)">
                 <input id="graduation_year" type="number" placeholder="Graduation Year e.g. 2025">
+                <select id="payment_plan" title="plan">
+                    <option value="plan2">Plan 2</option>
+                    <option value="plan5">Plan 5</option>
+                </select>
             </form>
             <button onclick="updateChart()">Generate Chart</button>
+            <p id="debtPaid"></p>
         </div>
         <div id="tool_warning">
-            <p>Warning: This tool is for illustrative purposes only. The actual amount of debt and interest may vary. Please refer to the official websites for the most up-to-date information.</p>
+            <h2 class="title">Warning</h2>
+            <p>This tool is for illustrative purposes only. The actual amount of debt and interest may vary. Please refer to the official websites for the most up-to-date information.</p>
             <p>Assumptions made:</p>
             <ul>
-                <li>Interest is compounded annually</li>
-                <li>Interest is calculated starting from the following April after your graduation</li>
-                <li>Interest rate is fixed</li>
-                <li>Not paying back toward the loan</li>
+                <li>Interest is calculated starting from the April after you graduate.</li>
+                <li>Income increases by the percentage you input every year, without limit.</li>
             </ul>
-            <p>If you have not graduated yet, please input how much debt you expect to accumulate by the time you graduate</p>
         </div>
     </div>
     <!-- Footer -->
