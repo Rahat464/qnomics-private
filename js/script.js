@@ -171,9 +171,9 @@ const plan2 = [
 ]
 
 const plan5 = [    
-    {"start": 1638316800000, "end": 1640908800000, "interestRate": "7.5%"},
-    {"start": 1630454400000, "end": 1638316800000, "interestRate": "7.3%"},
-    {"start": 1627756800000, "end": 1630454400000, "interestRate": "7.1%"}
+    {"start": 1638316800000, "end": 1640908800000, "interestRate": "7.5"},
+    {"start": 1630454400000, "end": 1638316800000, "interestRate": "7.3"},
+    {"start": 1627756800000, "end": 1630454400000, "interestRate": "7.1"}
 ]
 
 /* Credits:
