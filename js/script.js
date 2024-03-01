@@ -79,16 +79,23 @@ function generateDataPoints(debt, grad_year, plan, income, yearlyIncrease) {
                 // Plan 5: Take away 9% of the income above 25000 from the debt
                 incomeToDebt = (income - 25000) * 0.09;
             }
+            
+            // if there is less debt than the income to be paid, only pay the remaining debt
+            incomeToDebt = Math.min(incomeToDebt, debt);
+            
+            // Update the amount of debt paid so far
             debtPaid += incomeToDebt;
+
+            // Subtract the income from the debt
             debt -= incomeToDebt;
         }
 
         // Add yearly increase to the income
-        income = income + (income * (yearlyIncrease / 100));
+        income += (income * (yearlyIncrease / 100));
 
-        // If debt is 0, return the dataPoints
         if (debt <= 0) {
             dataPoints.push({ x: (year), y: (0)});
+            document.getElementById("debtPaid").innerHTML = `Total debt paid: £${debtPaid.toFixed(2)}`;
             return dataPoints;
         }
 
@@ -96,7 +103,7 @@ function generateDataPoints(debt, grad_year, plan, income, yearlyIncrease) {
     }
 
     // Change innerHTML of id debtPaid to the amount paid
-    document.getElementById("debtPaid").innerHTML = `Total debt paid: £${Math.round(debtPaid)}`;
+    document.getElementById("debtPaid").innerHTML = `Total debt paid: £${debtPaid.toFixed(2)}`;
     return dataPoints;
 }
 
