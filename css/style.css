@@ -157,6 +157,14 @@ footer {
     margin-bottom: 10px;
 }
 
+/* Table */
+#maintenance-loan-sfe {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 1%;
+}
+
+
 /* tablet */
 
 @media only screen and (max-width: 1242px) {
@@ -175,6 +183,10 @@ footer {
 
     #inputbox input, #inputbox select {
         width: 80%;
+    }
+
+    img {
+        width: 100%;
     }
 }
 
